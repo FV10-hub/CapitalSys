@@ -8,14 +8,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>CapitalSys-web</artifactId>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>CapitalSys-web</name>
     <url>http://maven.apache.org</url>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
         <dependency>

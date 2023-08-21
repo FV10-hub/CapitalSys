@@ -2,3 +2,23 @@
 .project
 
 instaladores/
+
+CapitalSys-data/.settings
+CapitalSys-data/target
+CapitalSys-data/.classpath
+CapitalSys-data/.project
+
+CapitalSys-entities/.settings
+CapitalSys-entities/target
+CapitalSys-entities/.classpath
+CapitalSys-entities/.project
+
+CapitalSys-services/.settings
+CapitalSys-services/target
+CapitalSys-services/.classpath
+CapitalSys-services/.project
+
+CapitalSys-web/.settings
+CapitalSys-web/target
+CapitalSys-web/.classpath
+CapitalSys-web/.project
