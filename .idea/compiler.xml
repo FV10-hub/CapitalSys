@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CapitalSys-data" />
-        <module name="CapitalSys-entities" />
         <module name="CapitalSys-services" />
+        <module name="CapitalSys-entities" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
