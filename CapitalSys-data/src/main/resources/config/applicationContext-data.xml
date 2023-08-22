@@ -16,7 +16,7 @@
 	<!-- ::::::::::::::: PERMITE EL USO DE ANOTACIONES CON SPRING EN EL BASE PACKAGE MENCIONADO ::::::::: -->
 
 	<context:annotation-config></context:annotation-config>
-	<context:component-scan base-package="py.com.capitalsysdata"></context:component-scan>
+	<context:component-scan base-package="py.com.capitalsys"></context:component-scan>
 	
 	<!-- ::::::::::::::: SE CARGA EL ARCHIVO DE CONFIGURACION PROPERTIES ::::::::::::::: -->
 	
