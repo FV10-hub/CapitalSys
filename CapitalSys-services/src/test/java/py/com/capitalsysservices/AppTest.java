@@ -1,4 +1,4 @@
-package py.com.capitalsys;
+package py.com.capitalsysservices;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
