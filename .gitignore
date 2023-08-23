@@ -2,6 +2,7 @@
 .project
 
 instaladores/
+db/
 
 CapitalSys-data/.settings
 CapitalSys-data/target
