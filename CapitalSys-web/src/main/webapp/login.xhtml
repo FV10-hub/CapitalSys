@@ -5,33 +5,45 @@
       
       
       <h:head>
-      	<meta name="viewport" content="width=device-width, user-scalable=no"></meta>
-      	<h:outputStylesheet library="css" name="login.css"></h:outputStylesheet>
-      </h:head>
-      
-      <h:body style="background-color: black">
-      	<div class="ui-fluid">
-      		<h:form id="formLogin">
-      		
-      			<p:growl id="growl" showDetail="true" skipDetailIfEqualsSummary="true"/>  
-      		
-      			<p:panel id="pnlLogin" header="Inicio de Sesión" style="text-align: center;">
-      			
-      			
-      				<p:panelGrid id="pnlGridLogin" columns="1" columnClasses="ui-g-12 ui-md-12,ui-g-12 ui-md-12" layout="grid" styleClass="ui-panelgrid-blank ui-fluid" style="background-color: black">
-      			
-	      				<p:outputLabel value="Usuario: " styleClass="colorText" for="txtUsuario" style="float: left"></p:outputLabel>
-	      				<p:inputText id="txtUsuario" value="#{loginController.usuario}" required="true" requiredMessage="El usuario es requerido"></p:inputText>
-	      				
-	      				<p:outputLabel value="Contraseña: " styleClass="colorText" for="txtPassword" style="float: left"></p:outputLabel>
-	      				<p:password id="txtPassword" value="#{loginController.password}" required="true" requiredMessage="La contraseña es requerida"></p:password>      				
-	      			
-	      				<p:outputLabel></p:outputLabel>
-	      				<p:commandButton value="Entrar" action="#{loginController.entrar}" update="pnlGridLogin, growl"></p:commandButton>
-	      			</p:panelGrid>
-      			</p:panel>      		
-      		</h:form>
-      	</div>
-      </h:body>
+        <title>Capital Creditos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <h:outputStylesheet library="css" name="login.css"></h:outputStylesheet>
+        <h:outputScript library="js" name="login.js" />
+    </h:head>
+    <body>
+        <p:growl id="growl" showDetail="false"/>
+        <div id="wrapper">
+            <div class="user-icon"></div>
+            <div class="pass-icon"></div>
+            <h:form id="login-form" styleClass="login-form">
+                <script>
+                    window.onload = function () {
+                        document.getElementById('login-form:username').focus();
+                    };
+                </script>
+                <div class="header">
+                    <center>
+                        <p:graphicImage name="images/user.png" style="width: 100px; align-items: center;"/>
+                    </center>
+                </div>
+                <center>
+                    <span style="font-family: 'Bree Serif', serif;font-weight: 300;font-size: 15px; line-height:34px; color: #414848;text-shadow: 1px 1px 0 rgba(256,256,256,1.0); margin-bottom: 10px;">
+                        <p>Bienvenidos a</p>
+                        
+                        <p>Capital Creditos</p>
+                     </span>
+                </center>
+                <div class="content">
+                    <p:inputText title="hola" id="username" value="#{bsLogin.user}" styleClass="input username" label="username"/>
+                    <h:inputSecret id="password" value="#{bsLogin.pass}" styleClass="input password"/>
+                </div>
+                <div class="footer">
+                    <h:commandButton type="submit" id="submit" value="Login" styleClass="button" action="#{bsLogin.login}"/>
+                </div>
+
+            </h:form>
+        </div>
+        <div class="gradient"></div>
+    </body>
       
 </html>
